@@ -6,12 +6,25 @@ package com.spring.boot.data.rest.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @author mahes
  *
  */
 @Entity
+@Table(name = "Ticket")
+@Setter
+@Getter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Ticket {
 
 	@Id
@@ -23,48 +36,5 @@ public class Ticket {
 	
 	@Column
 	private String message;
-
-	/**
-	 * @return the ticketId
-	 */
-	public Integer getTicketId() {
-		return ticketId;
-	}
-
-	/**
-	 * @param ticketId the ticketId to set
-	 */
-	public void setTicketId(Integer ticketId) {
-		this.ticketId = ticketId;
-	}
-
-	/**
-	 * @return the ticketDesc
-	 */
-	public String getTicketDesc() {
-		return ticketDesc;
-	}
-
-	/**
-	 * @param ticketDesc the ticketDesc to set
-	 */
-	public void setTicketDesc(String ticketDesc) {
-		this.ticketDesc = ticketDesc;
-	}
-
-	/**
-	 * @return the message
-	 */
-	public String getMessage() {
-		return message;
-	}
-
-	/**
-	 * @param message the message to set
-	 */
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	
 	
 }

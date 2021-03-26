@@ -21,6 +21,17 @@ I made use of below annotations for customizing the default behaviour of the spr
 @RestResource(exported = false)
 ```
 
+## More Information
+This application has default data loading capability during the startup. By default it loads some data for entities like Institute, Course and Student. Once the application is up and running, we can simply access below links for default data, which actually loads the data and exposes the respective data rest api's
+
+
+[Institute](http://localhost:8080/institutes)
+
+[Course](http://localhost:8080/courses)
+
+[Student](http://localhost:8080/students)
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
